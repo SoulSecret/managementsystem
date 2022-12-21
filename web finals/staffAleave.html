@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>STM Employee Management System</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+           <div class="pic">
+            <img src="drawable/poto.png">
+            <h3 style="font-family: 'Fredoka One';margin-left: 10px;">Justine Moser</h3>
+            <h4 style="font-family: 'Fredoka One';margin-left: 10px;">justine@gmail.com</h4>
+            <hr>
+           </div>
+           <div class="btn">
+            <center>
+                <a href="staff.html" ><button type="button" ><i class="fa-solid fa-eye" style="margin-right: 10px;"></i>View List</button></a>
+                <a href="staffloginfo.html" ><button type="button"><i class="fa-sharp fa-solid fa-address-book" style="margin-right: 10px;"></i>Log Information</button></a>
+                <a href="staffleave.html" ><button type="button" class="active"><i class="fa-sharp fa-solid fa-address-book" style="margin-right: 10px;"></i>Leave</button></a>
+                <a href="index.html"><button type="button" class="out"><i class="fa-solid fa-right-from-bracket" style="margin-right: 10px;"></i>Sign out</button></a>
+            </center>
+           </div>
+        </div>
+    </div>
+    
+    <div class="guhit">
+        <img src="drawable/logo.png">
+        <h1>Work Leave</h1>
+        <h3>Employee Name: Jose Pulgas</h3>
+        <hr>
+    </div>  
+    <div class="square" style="margin-top: 40px;">
+        <div class="left" style="float: left; width: 20%;">
+        <img src="drawable/poto.png" style="width: 80px;height: 80px;border-radius: 50px;"></img>
+    </div>
+    <div class="right" style="display: flex;">
+        <p>Date Of Leave: <span>12-12-22</span></p>
+        <p style="margin-left: 15px;">Date Of Return: <span>1-2-23</span></p>
+        <p style="margin-left: 15px;">Type Of Leave: <span>Vocation</span></p>
+    </div>
+    </div>  
+    <div class="center">
+        <h3>Reason For Leave</h3>
+        <div class="panels" style="height: 200px;width: 250px;border: 2px solid #3C3D9F;padding: 5px;"><p>Message</p></div>
+        <div style="margin-right: 200px;margin-top: 30px; min-width: 100px;min-height: 100px;">
+        <button class="btnS" onclick="approve()" style="margin-right: 80px;"><i class="fa-regular fa-circle-check" style="margin-right: 10px;"></i>Approve</button>
+        <a href="staffleave.html"><button type="button" class="btns"><i class="fa-solid fa-right-from-bracket" style="margin-right: 5px;"></i>Exit</button></a>
+    </div>
+    </div>
+    <script>
+        function approve(){
+            alert("Approved!");
+            window.location = "staffleave.html";
+        }
+    </script>
+</body>
+</html>

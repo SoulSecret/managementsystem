@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>STM Employee Management System</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+           <div class="pic">
+            <img src="drawable/poto.png">
+            <h3 style="font-family: 'Fredoka One';margin-left: 10px;">Justine Moser</h3>
+            <h4 style="font-family: 'Fredoka One';margin-left: 10px;">justine@gmail.com</h4>
+            <hr>
+           </div>
+           <div class="btn">
+            <center>
+                <a href="list.html"><button type="button"><i class="fa-solid fa-eye" style="margin-right: 10px;"></i>View List</button></a>
+                <a href="loginfo.html"><button type="button" ><i class="fa-sharp fa-solid fa-address-book" style="margin-right: 10px;"></i>Log Information</button></a>
+                <a href="adduser.html"><button type="button" class="active"><i class="fa-solid fa-user-plus" style="margin-right: 10px;"></i>Add User</button></a>
+                <a href="userinfo.html"><button type="button" ><i class="fa-sharp fa-solid fa-address-book" style="margin-right: 10px;"></i>User Information</button></a>
+                <a href="Aleave.html"><button type="button" ><i class="fa-solid fa-envelope" style="margin-right: 10px;"></i>Work Leave</button></a>
+                <a href="auditdetails.html"><button type="button"><i class="fa-solid fa-book" style="margin-right: 10px;"></i>Audit Details</button></a>
+                <a href="index.html"><button type="button" class="out"><i class="fa-solid fa-right-from-bracket" style="margin-right: 10px;"></i>Sign out</button></a>
+            </center>
+           </div>
+        </div>
+    </div>
+    
+    <div class="guhit">
+        <img src="drawable/logo.png">
+        <h1>Add User</h1>
+        <hr>
+    </div>  
+        <div class="panel">
+            <div class="inside">
+                <form action="userinfo.html" id="addUser">
+            <label for="id">ID: </label>
+            <input type="number" name="id" id="Uid" style="height: 20px;margin-top: 10px;margin-left: 80px;" required>
+            <br>
+            <label for="divi">ROLE: </label>
+           <select style="height: 20px;margin-top: 30px;margin-left: 55px;height: 30px;width: 170px;">
+            <option value="">Admin</option>
+            <option value="">Staff</option>
+            <option value="">Employee</option>
+           </select>
+            <br>
+            <label for="users" >USERNAME: </label>
+            <input type="text" name="users" id="users" style="height: 20px;margin-top: 40px;margin-left: 10px;" required>
+            <br>
+            <label for="passW">PASSWORD: </label>
+            <input type="password" name="passW" id="passW" style="height: 20px;margin-top: 40px;margin-left: 10px;" required>
+            <br>
+            <button class="btnA" type="submit"><i class="fa-solid fa-user-plus" style="margin-right: 10px;"></i>Add</button>
+        </form>
+        </div>
+    </div>
+    <script>
+        // Get the form element
+var formElement = document.getElementById("addUser");
+
+// Handle the submit event on the form
+formElement.addEventListener("submit", function(event) {
+  // Get all of the input elements that are required
+  var requiredInputs = formElement.querySelectorAll("input[required]");
+
+  // Loop through the required inputs
+  for (var i = 0; i < requiredInputs.length; i++) {
+    // Get the current input
+    var input = requiredInputs[i];
+
+    // Check if the input is empty
+    if (input.value === "") {
+      // The input is empty, so display a message and prevent the form from being submitted
+      alert("Please fill out all required fields before submitting the form.");
+      event.preventDefault();
+    }
+  }
+
+  // If all of the required fields have been filled out, display an alert to confirm that the form has been submitted
+  alert("Added successfully!");
+  window.open("userinfo.html","currentWindow");
+});
+    </script>
+</body>
+</html>

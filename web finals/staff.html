@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>STM Employee Management System</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+           <div class="pic">
+            <img src="drawable/poto.png">
+            <h3 style="font-family: 'Fredoka One';margin-left: 10px;">Justine Moser</h3>
+            <h4 style="font-family: 'Fredoka One';margin-left: 10px;">justine@gmail.com</h4>
+            <hr>
+           </div>
+           <div class="btn">
+            <center>
+                <a href="staff.html" ><button type="button" class="active"><i class="fa-solid fa-eye" style="margin-right: 10px;"></i>View List</button></a>
+                <a href="staffloginfo.html" ><button type="button"><i class="fa-sharp fa-solid fa-address-book" style="margin-right: 10px;"></i>Log Information</button></a>
+                <a href="staffleave.html" ><button type="button"><i class="fa-sharp fa-solid fa-address-book" style="margin-right: 10px;"></i>Leave</button></a>
+                <a href="index.html"><button type="button" class="out"><i class="fa-solid fa-right-from-bracket" style="margin-right: 10px;"></i>Sign out</button></a>
+            </center>
+           </div>
+        </div>
+    </div>
+    
+    <div class="guhit">
+        <img src="drawable/logo.png">
+      <h1>All Employee list</h1>
+        <center>
+      <div class="seyrch">
+          <i class="fa-sharp fa-solid fa-magnifying-glass">Search</i>
+        <input type="text" name="" placeholder="Employee Id" id="search"></imput>
+      </div>
+    </center>
+        <hr>
+    </div>  
+    <div class="badi">
+      <table cellspacing="0" id="myTable">  
+            <tr>
+              <th>ID</th>
+              <th>FULLNAME</th>
+              <th>GENDER</th>
+              <th>BIRTHDAY</th>
+              <th>ADDRESS</th>
+              <th>EMAIL</th>
+              <th>CONTACT #</th>
+              <th>JOB TITLE</th>
+              <th>Action</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Jose Pulgas</td>
+              <td>Male</td>
+              <td>02/06/1999</td>
+              <td>San Josef</td>
+              <td>aaa@gmail.com</td>
+              <td>091232123123</td>
+              <td>Caashier</td>
+              <td><a href="staffedit.html"><button class="edit"><i class="fa-solid fa-pen-to-square" style="margin-right: 5px;"></i>Edit</button></a></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Jose Pulgas</td>
+              <td>Male</td>
+              <td>02/06/1999</td>
+              <td>San Josef</td>
+              <td>aaa@gmail.com</td>
+              <td>091232123123</td>
+              <td>Caashier</td>
+              <td><a href="staffedit.html"><button class="edit"><i class="fa-solid fa-pen-to-square" style="margin-right: 5px;"></i>Edit</button></a></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Jose Pulgas</td>
+              <td>Male</td>
+              <td>02/06/1999</td>
+              <td>San Josef</td>
+              <td>aaa@gmail.com</td>
+              <td>091232123123</td>
+              <td>Caashier</td>
+              <td><a href="staffedit.html"><button class="edit"><i class="fa-solid fa-pen-to-square" style="margin-right: 5px;"></i>Edit</button></a></td>
+            </tr>
+          </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

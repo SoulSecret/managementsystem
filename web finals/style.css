@@ -1,0 +1,367 @@
+body{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    background: #e6e6e6;
+}
+.a{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+.login{
+    padding: 10px;
+    background-color: #3C3D9F;
+    width: 550px;
+    height: 450px;
+    color: azure;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.h2{
+    font-size: 30px;
+    text-align: center;
+}
+#user{
+    color: black;
+    height: 20px;
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#pass{
+    height: 20px;
+    width: 150px;
+}
+#division{
+    height: 30px;
+    width: 130px;
+    margin-left: 100px;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+#button{
+    color: azure;
+    background-color: #000197;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    width: 100px;
+}
+#logo{
+    height: 110px;
+    width: 110px;
+    border-radius: 55px;
+}
+.wrapper .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    transition: all 0.5s ease;
+    border-right: 2px solid black;
+  }
+  
+  .wrapper .sidebar .pic{
+    margin-bottom: 30px;
+    background: #3C3D9F;
+    text-align: center;
+  }
+  
+  .wrapper .sidebar .pic img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .wrapper .sidebar .pic h4{ 
+    color: white;
+    font-weight: 200;
+    margin-top: 20px;
+  }
+  .wrapper .sidebar .pic h3{ 
+    color: white;
+    font-weight: 200;
+    margin-top: 20px;
+  }
+  .wrapper .sidebar hr{
+    height: 2px;
+    background-color: black;
+    margin-top: 5pxpx;
+    border: none;
+  }
+  .guhit img{
+    border-radius: 50px;
+  }
+  .btns{
+    float: right;
+    border-radius: 3px;
+    height: 40px;
+    width: 80px;
+    color: #3C3D9F;
+    border: 1px solid #3C3D9F;
+  }
+  .btns:hover{
+    color: white;
+    background: #3C3D9F;
+  }
+  .btn button{
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    width: 160px;
+    color: #3C3D9F;
+    border: 1px solid #3C3D9F;
+    margin-top: 10px;  
+}
+.btn button:hover{
+    color: white;
+    background: #3C3D9F;
+}
+.btn .active{
+    color: white;
+    background: #3C3D9F;
+}
+.btn .out{
+    margin-top: 20px;
+}
+.guhit{
+    margin-left: 225px;
+}
+.guhit hr{
+    height: 2px;
+    background-color: black;
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+}
+.guhit .seyrch{
+    position: absolute;
+    margin: 70px 0 0 400px;
+}
+.guhit .seyrch input{
+    height: 25px;
+    border-radius: 3px;
+    border: 2px solid #3C3D9F;
+}
+.guhit h1{
+    font-family: 'Fredoka One';
+    margin-left: 10px;
+    float: left;
+}
+.guhit h3{
+    position: absolute;
+    margin-top: 130px;
+    font-family: 'Fredoka One';
+    margin-left: 10px;
+}
+.guhit img{
+    float: right;
+    margin: 10px 200px 10px 0;
+    height: 100px;
+    width: 100px;
+}
+.badi{
+    min-width: 960px;
+    max-width: 1000px;
+    margin-left: 250px;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: #3C3D9F;
+}
+a:hover{
+    color: white;
+}
+th{
+    font-family: 'Fredoka One';
+    font-weight: 200;
+    color: white;
+    background-color: #3C3D9F;
+    border-collapse: collapse;
+    padding: 5px;
+}
+table{
+    background: #E6E6E6;
+    border: 3px solid #3C3D9F;
+}
+table tr td{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+table tr td button{
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100px;
+    margin: 5px 5px;
+    color: white;
+    background-color: #000197;
+}
+.del{
+    background: #B52323;
+}
+.edit{
+    background: #3C3D9F;
+}
+
+.add{
+   position: absolute;
+   margin-left: 200px;
+}
+.add input{
+    height: 25px;
+    width: 130px;
+    border: 1px solid #3C3D9F;
+    background: #E6E6E6;
+    margin: 10px 0;
+}
+#add{
+    position: absolute;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background: #3C3D9F;
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-left: 100px;
+}
+#left{
+    margin-left: 70px;
+}
+.left{
+    font-family: 'Fredoka One'; 
+}
+.right{
+    font-family: 'Fredoka One'; 
+}
+.search{
+    margin-left: 300px;
+    margin-bottom: 10px;
+}
+.search input{
+    height: 25px;
+    border-radius: 3px;
+    border: 2px solid #3C3D9F;
+}
+input{
+    height: 25px;
+    border-radius: 3px;
+    border: 2px solid #3C3D9F;
+}
+.panel{
+    height: 400px;
+    width: 600px;
+    margin: 30px 0 0 400px;
+    border: 3px solid #3C3D9F;
+    background: #E6E6E6;
+}
+.panel .inside{
+    margin-left: 100px;
+    margin-top: 30px;
+    font-family: 'Fredoka One'; 
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.btnA{
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin-top: 30px;
+    margin-left: 300px;
+    height: 35px;
+    width: 90px;
+    background: #3C3D9F;
+}
+.line h3{
+    position: absolute;
+    font-family: 'Fredoka One';
+    margin-left: 240px;
+    margin-top: 130px;
+}
+.square{
+    width: 80%;
+    margin-left: 250px;
+}
+.center{
+    font-family: 'Fredoka One';
+    width: 600px;
+    padding: 10px;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+.btnS{
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin-bottom: 30px;
+    height: 35px;
+    width: 90px;
+    background: #3C3D9F;
+}
+.btnV{
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin-bottom: 30px;
+    height: 35px;
+    width: 90px;
+    background: #B52323;
+}
+.pan{
+    margin: 150px 0 0 400px;
+    height: 220px;
+    width: 500px;
+    background: #3C3D9F;
+    color: #E6E6E6;
+    border-radius: 5px;
+    border: 1px solid #3C3D9F;
+}
+.pan .cen{
+    font-family: 'Fredoka One';
+    margin: 20px 0 0 100px;
+}
+.flex{
+    font-family: 'Fredoka One';
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.flex button{
+    border: none;
+    color: white;
+    margin: 20px 0 0 170px;
+    border-radius: 3px;
+    height: 30px;
+    width: 100px;
+    background: #000197;
+}
+#btne{
+    border: none;
+    color: white;
+    margin: 23px 0 0 170px;
+    border-radius: 3px;
+    height: 30px;
+    width: 100px;
+    background: #000197;
+}
+option{
+    height: 30px;
+    width: 170px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>STM Employee Management System</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+           <div class="pic">
+            <img src="drawable/poto.png">
+            <h3 style="font-family: 'Fredoka One';margin-left: 10px;">Justine Moser</h3>
+            <h4 style="font-family: 'Fredoka One';margin-left: 10px;">justine@gmail.com</h4>
+            <hr>
+           </div>
+           <div class="btn">
+            <center>
+                <a href="list.html"><button type="button"><i class="fa-solid fa-eye" style="margin-right: 10px;"></i>View List</button></a>
+                <a href="loginfo.html"><button type="button" ><i class="fa-sharp fa-solid fa-address-book" style="margin-right: 10px;"></i>Log Information</button></a>
+                <a href="adduser.html"><button type="button" ><i class="fa-solid fa-user-plus" style="margin-right: 10px;"></i>Add User</button></a>
+                <a href="userinfo.html"><button type="button" class="active"><i class="fa-sharp fa-solid fa-address-book" style="margin-right: 10px;"></i>User Information</button></a>
+                <a href="Aleave.html"><button type="button" ><i class="fa-solid fa-envelope" style="margin-right: 10px;"></i>Work Leave</button></a>
+                <a href="auditdetails.html"><button type="button"><i class="fa-solid fa-book" style="margin-right: 10px;"></i>Audit Details</button></a>
+                <a href="index.html"><button type="button" class="out"><i class="fa-solid fa-right-from-bracket" style="margin-right: 10px;"></i>Sign out</button></a>
+            </center>
+           </div>
+        </div>
+    </div>
+    
+    <div class="guhit">
+        <img src="drawable/logo.png">
+        <h1>User Information</h1>
+        <hr>
+    </div>  
+    <div class="badi">
+        <div class="search">
+            <label for="search"><i class="fa-solid fa-magnifying-glass"></i>Search</label>
+            <input type="number" name="" id="search" placeholder="Search...">
+        </div>
+        <table cellspacing="0" style="width: 700px;padding: 1px;">
+            <tr>
+                <th>ID</th>
+                <th>Division</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Action</th>
+            </tr>
+            <tr id="one">
+                <td>1</td>
+                <td>Jose Pulgas</td>
+                <td>01-jose</td>
+                <td>stm1-jose</td>
+                <td><a href="edituser.html"><button class="edit"><i class="fa-solid fa-pen-to-square" style="margin-right: 5px;"></i>Edit</button></a><button class="del" onclick="del1()"><i class="fa-solid fa-user-xmark" style="margin-right: 5px;"></i>Delete</button></td>
+            </tr>
+            <tr id="two">
+                <td>2</td>
+                <td>Justine Santos</td>
+                <td>02-justine</td>
+                <td>stm2-justine</td>
+                <td><a href="edituser.html"><button class="edit"><i class="fa-solid fa-pen-to-square" style="margin-right: 5px;"></i>Edit</button></a><button class="del" onclick="del2()"><i class="fa-solid fa-user-xmark" style="margin-right: 5px;"></i>Delete</button></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function del1(){
+        document.getElementById('one').style.display = "none";
+      }
+      function del2(){
+        document.getElementById('two').style.display = "none";
+      }
+    </script>
+</body>
+</html>

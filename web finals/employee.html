@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>STM Employee Management System</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+           <div class="pic">
+            <img src="drawable/poto.png">
+            <h3 style="font-family: 'Fredoka One';margin-left: 10px;">Employee Name</h3>
+            <h4 style="font-family: 'Fredoka One';margin-left: 10px;">Employee Email</h4>
+            <hr>
+           </div>
+           <div class="btn">
+            <center>
+                <a href="employee.html"><button type="button" class="active"><i class="fa-solid fa-eye" style="margin-right: 10px;"></i>Basic Information</button></a>
+                <a href="empleave.html"><button type="button"><i class="fa-solid fa-envelope" style="margin-right: 10px;"></i>Work Leave</button></a>
+                <a href="index.html"><button type="button" class="out"><i class="fa-solid fa-right-from-bracket" style="margin-right: 10px;"></i>Sign out</button></a>
+            </center>
+           </div>
+        </div>
+    </div>
+    
+    <div class="guhit">
+        <h1>Employee<br>Job Title</h1>
+        <img src="drawable/logo.png">
+        <hr>
+    </div>  
+    <div class="badi">
+            <body>
+                <form action="">
+                    <div class="left" style="float: left; width: 50%;">
+                    <label for="id" >ID:</label><br>
+                    <input type="text" id="id" name="id"><br>
+                    <label for="fullname" >Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname"><br>
+                    <label for="gender" >Gender:</label><br>
+                    <input type="text" id="gender" name="gender"><br>
+                    
+                      </div>
+                      <div class="right" style="float: right; width: 50%;">
+                        <label for="address" >Address:</label><br>
+                    <input type="text" id="address" name="address"><br>
+                    <label for="birthday" >Birthday:</label><br>
+                    <input type="text" id="birthday" name="birthday"><br>
+                    <label for="email" >Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                      </div>
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

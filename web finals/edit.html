@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>STM Employee Management System</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+           <div class="pic">
+            <img src="drawable/poto.png">
+            <h3 style="font-family: 'Fredoka One';margin-left: 10px;">Justine Moser</h3>
+            <h4 style="font-family: 'Fredoka One';margin-left: 10px;">justine@gmail.com</h4>
+            <hr>
+           </div>
+           <div class="btn">
+            <center>
+            <a href="list.html"><button type="button" class="active"><i class="fa-solid fa-eye" style="margin-right: 10px;"></i>View List</button></a>
+            <a href="loginfo.html"><button type="button" ><i class="fa-sharp fa-solid fa-address-book" style="margin-right: 10px;"></i>Log Information</button></a>
+            <a href="adduser.html"><button type="button" ><i class="fa-solid fa-user-plus" style="margin-right: 10px;"></i>Add User</button></a>
+            <a href="userinfo.html"><button type="button" ><i class="fa-sharp fa-solid fa-address-book" style="margin-right: 10px;"></i>User Information</button></a>
+            <a href="Aleave.html"><button type="button" ><i class="fa-solid fa-envelope" style="margin-right: 10px;"></i>Work Leave</button></a>
+            <a href="index.html"><button type="button" class="out"><i class="fa-solid fa-right-from-bracket" style="margin-right: 10px;"></i>Sign out</button></a>
+            </center>
+           </div>
+        </div>
+    </div>
+    
+    <div class="guhit">
+        <h1>Edit Employee Information</h1>
+        <img src="drawable/logo.png">
+        <hr>
+    </div>  
+    <div class="badi" style="padding-left: 150px;">
+                <form action="">
+                    <div class="left" style="float: left; width: 50%;">
+                    <label for="id">ID:</label><br>
+                    <input type="text" id="id" name="id"><br>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname"><br>
+                    <label for="gender">Gender:</label><br>
+                    <input type="text" id="gender" name="gender"><br>
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address"><br>
+                    <label for="birthday">Birthday:</label><br>
+                    <input type="text" id="birthday" name="birthday"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                      </div>
+                      <div class="right" style="float: right; width: 50%;">
+                        <label for="contact">Contact:</label><br>
+                        <input type="text" id="contact" name="contact"><br>
+                        <label for="jobtitle">Job Title:</label><br>
+                        <input type="text" id="jobtitle" name="jobtitle"><br>
+                        <label for="salary">Salary:</label><br>
+                        <input type="text" id="salary" name="salary"><br>
+                        <label for="status">Status:</label><br>
+                        <input type="text" id="status" name="status"><br>
+                        <label for="dateofhired">Date of Hired:</label><br>
+                        <input type="text" id="dateofhired" name="dateofhired"><br>
+                        <label for="designation">Location:</label><br>
+                      </div>
+                    <input type="text" id="designation" name="designation"><br><br>            
+        <label for="upload-image">Select image to upload:</label>
+        <input type="file" id="upload-image" accept="image/*" style="width: 200px;padding: 3px;">
+        <a href="list.html"><button type="button" id="add" style="margin-left: 120px;"><i class="fa-solid fa-user-plus" style="margin-right: 5px;"></i>Update</button></a>
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
